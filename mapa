@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<!-- Oscar Unzueta -->
+	<style>
+          #map { 
+    width: 950px;
+    height: 550px;
+    box-shadow: 5px 5px 5px #888;
+          }
+		       img { 
+    width: 200px;
+    height: 125px;
+    box-shadow: 5px 5px 5px #888;
+          }  
+		  
+		  
+	</style>
+</head>
+	<body>
+	
+	<h2> Mosquito tigre en Vitoria </h2>
+	<div>
+		<img src="https://enjoytorrevieja.com/wp-content/uploads/2021/03/mosquito-tigre-scaled.jpg">
+	    <img src="https://imesapi.es/wp-content/uploads/2017/10/ayuntamiento-vitoria-logo-vector.jpg">
+		<a href="mailto:ounzueta@vitoria-gasteiz.org">Contacta por email </a>Oscar Unzueta tel 945161616 ext4887
+		</div>
+		<div id = 'map'>
+		
+		</div>
+<script>
+  
+    var map = L.map('map').
+    setView( [42.8613813,-2.6821836],
+     12);
+
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, <a href="http://www.jortilles.com">Jortilles</a>',
+    maxZoom: 18
+    }).addTo(map);
+
+   
+    L.control.scale().addTo(map);
+
+	var marcador = L.marker([ 42.8613813,-2.6821836], {
+     title: "vi3 5",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi3 5</i>")
+     .addTo(map);
+
+
+  	var marcador = L.marker([42.8613037, -2.6820883], {
+     title: "vi3 4",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi3 4</i>")
+     .addTo(map);
+	
+	
+	var marcador = L.marker([42.8616958,-2.6794762], {
+     title: "vi3 3",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi3 3</i>")
+     .addTo(map);
+  
+	
+	var marcador = L.marker([42.8615804,-2.6806592], {
+     title: "vi3 2",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi3 2</i>")
+     .addTo(map);	
+	
+	
+	var marcador = L.marker([42.8613120,-2.6805989], {
+     title: "vi3 1",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi3 1</i>")
+     .addTo(map);	
+
+	
+	var marcador = L.marker([42.8518127,-2.6808550], {
+     title: "vi4 5",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi4 5</i>")
+     .addTo(map);	 
+	
+	var marcador = L.marker([42.8520267,-2.6808056], {
+     title: "vi4 4",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi4 4</i>")
+     .addTo(map);	 
+
+
+	
+	var marcador = L.marker([42.8524975,-2.6807746], {
+     title: "vi4 3",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi4 3</i>")
+     .addTo(map);
+	
+	var marcador = L.marker([42.8531417,-2.6806021], {
+     title: "vi4 2",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi4 2</i>")
+     .addTo(map);
+	
+	var marcador = L.marker([42.8535126,-2.6804467], {
+     title: "vi4 1",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi4 1</i>")
+     .addTo(map);
+	 
+	var marcador = L.marker([42.8436261,-2.6760309], {
+     title: "vi2 5",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi2 5</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8434918,-2.6756623], {
+     title: "vi2 4",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi2 4</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8440537,-2.6757891], {
+     title: "vi2 3",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi2 3</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8446944,-2.6755953], {
+     title: "vi2 2",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi2 2</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8441981,-2.6759000], {
+     title: "vi2 1",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi2 1</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8389330,-2.6746025], {
+     title: "vi1 5",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi1 5</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8389390,-2.6738356], {
+     title: "vi1 4",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi1 4</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8388614,-2.6734752], {
+     title: "vi1 3",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi1 3</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8398474,-2.6737862], {
+     title: "vi1 2",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi1 2</i>")
+     .addTo(map);
+	var marcador = L.marker([42.8400371,-2.6733167], {
+     title: "vi1 1",
+     draggable:true,
+     opacity: 0.75
+     }).bindPopup("<i>vi1 1</i>")
+     .addTo(map);
+	 
+
+
+	 var marker = L.marker([  ],{draggable: true}).addTo(map); 
+	var marker = L.marker([ ],{draggable: true}).addTo(map);
+	
+	
+
+    marker.bindPopup("<b>Ayunta miento!</b><br>Territorio Mosquito tigre!").openPopup();
+
+
+
+</script>
+
+
+    </body>
+</html>
